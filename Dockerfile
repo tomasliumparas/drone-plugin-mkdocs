@@ -24,6 +24,6 @@ RUN pip3 install \
         Pygments \
         mkdocs-git-revision-date-localized-plugin
 
-RUN curl -so /usr/local/bin/mcl \
+RUN curl -so /usr/local/bin/mc \
         https://dl.min.io/client/mc/release/linux-amd64/mc && \
     chmod +x /usr/local/bin/mc && \
