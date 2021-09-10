@@ -1,0 +1,17 @@
+kind: pipeline
+type: kubernetes
+name: build
+
+steps:
+
+- name: Base
+  image: plugins/docker
+  settings:
+    username:
+      from_secret: DOCKER_USER
+    password:
+      from_secret: DOCKER_TOKEN
+    repo: getais/drone-plugin-mkdocs
+    tags:
+      - latest
+      - 0.1.0
