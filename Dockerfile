@@ -23,3 +23,7 @@ RUN pip3 install \
         pymdown-extensions \
         Pygments \
         mkdocs-git-revision-date-localized-plugin
+
+RUN curl -so /usr/local/bin/mcl \
+        https://dl.min.io/client/mc/release/linux-amd64/mc && \
+    chmod +x /usr/local/bin/mc && \
