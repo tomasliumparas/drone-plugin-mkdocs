@@ -14,4 +14,4 @@ steps:
     repo: getais/drone-plugin-mkdocs
     tags:
       - latest
-      - 0.1.0
+      - 0.2.0
